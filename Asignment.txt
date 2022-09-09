@@ -1,0 +1,61 @@
+<html>
+   <head>
+      <title>HTML Progress Tag</title>
+
+<style type="text/css">   
+    .loadbar
+    {
+         width:25px;
+         height:200px;
+         background-color:#eee;
+         border:1px solid #ccc;
+         position:relative; 
+    }
+    .bar
+    {
+        width:100%;
+        display:block;        
+        font-family:arial;
+        font-size:12px; 
+        background-color:#bb9319;
+        color:#eff;       
+        position:absolute;
+        bottom:0;        
+    }
+</style>
+
+   </head>
+ 
+      <h1>startoon Labs Assignment Screen</h1>
+<body>
+<form action="/action_page.php" onsubmit="return myFunction()">
+<input type="text" id="input" placeholder="Input Value" name="inputval"><br></br>
+<input type="text" id="max"  placeholder="Max Value" name="maxval">
+<input type="submit" value="Submit"> 
+</form>
+
+<script>
+function myFunction() {
+var inputs = document.getElementById("input").value;
+var maximum = document.getElementById("max").value;
+submitOK = "true";
+  if (inputs > maximum )
+ {
+    alert("The input value is greater than maximum");
+    submitOK = "false";
+  } 
+
+}
+</script>
+
+
+
+<br> </br>
+ <div class="loadbar">
+      <strong class="bar"  text-align:center" style='height:50%;'>60%</strong>
+    </div>
+	 	
+                               
+
+ </body>
+</html>
